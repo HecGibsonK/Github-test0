@@ -18,3 +18,12 @@ q2 = qnorm(p = 1-(Alpha/2),0,1); q2
 
 q1 = qt(p = (1-Gamma)/2, df = 3); q1
 q2 = qt(p = (1+Gamma)/2, df = 3); q2
+
+
+#install.packages("mosaic")   # Необходимо 
+#library(mosaic)
+library(rootSolve)
+require(xtable)
+require(tcltk)
+require(VGAM)
+require(rootSolve)
