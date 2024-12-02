@@ -27,3 +27,11 @@ require(xtable)
 require(tcltk)
 require(VGAM)
 require(rootSolve)
+
+########## Version 3 #############
+y <- solve(matrix(c(2, 1, -5, 3, 6, 7, -4, 0, 5), ncol=3), c(1, -6, 1))
+y1 <- y[1]
+y2 <- y[2]
+y3 <- y[3]
+y
+
