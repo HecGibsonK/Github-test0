@@ -35,3 +35,20 @@ y2 <- y[2]
 y3 <- y[3]
 y
 
+
+
+############ Higher derivatives:###################
+#####install.packages("mosaic")
+#####install.packages("scales")
+#####install.packages("ggplot2")
+
+stop = function(){
+  ('order must be >= 1')}
+
+Der = function(expr, name, order) {
+  if(order < 1){return (stop())}
+  if(order == 1){return (D(expr, name))}
+  else Der(D(expr, name), name, order - 1)
+}
+
+Der(expression(x^5), "x", 3)
